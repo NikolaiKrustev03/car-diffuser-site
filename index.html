@@ -1,23 +1,137 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NightDrive Scents</title>
+    <title>Ascent Lab</title>
     <style>
-        body { background-color: #000; color: #fff; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
-        h1 { color: #b026ff; font-size: 3rem; margin: 0; }
-        p { color: #888; }
-        .box { border: 1px solid #333; padding: 20px; max-width: 300px; margin: 20px auto; border-radius: 10px; background: #111; }
-        .btn { display: block; width: 100%; padding: 15px; margin-top: 20px; background: #b026ff; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; }
+        body { 
+            background-color: #000; 
+            color: #fff; 
+            font-family: 'Courier New', Courier, monospace; 
+            text-align: center; 
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        h1 { color: #b026ff; font-size: 3rem; margin: 0; letter-spacing: -2px; }
+        p { color: #888; margin-bottom: 40px; }
+        
+        h3 { color: #fff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; border-bottom: 1px solid #333; display: inline-block; padding-bottom: 5px;}
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; 
+            margin-bottom: 50px;
+        }
+
+        .box { 
+            border: 1px solid #333; 
+            padding: 20px; 
+            width: 100%; 
+            max-width: 300px; 
+            border-radius: 10px; 
+            background: #111; 
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box:hover {
+            border-color: #b026ff;
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 220px; 
+            object-fit: contain; 
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .color-correct {
+            filter: hue-rotate(290deg) saturate(1.5); 
+        }
+
+        .price { font-size: 1.2rem; color: #fff; font-weight: bold; margin: 10px 0; }
+        .sub { font-size: 0.8rem; color: #666; margin: 0; }
+
+        .btn { 
+            display: block; 
+            width: 100%; 
+            padding: 15px; 
+            margin-top: auto; 
+            background: #b026ff; 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+        }
+        
+        .btn:hover { background: #d46aff; }
     </style>
 </head>
 <body>
-    <h1>NIGHT DRIVE</h1>
-    <p>Set the vibe.</p>
-    <div class="box">
-        <h2>JDM Diffuser</h2>
-        <p>$20.00</p>
-        <a href="https://google.com" class="btn">JOIN WAITLIST</a>
+
+    <h1>Ascent Lab</h1>
+    <p>Upgrade your atmosphere.</p>
+
+    <h3>Ocean Series</h3>
+    <div class="row">
+        <div class="box">
+            <img src="ocean.png" alt="Ocean Hardware" class="product-img">
+            <h2>Ocean Diffuser</h2>
+            <p class="sub">Hardware + Scent</p>
+            <p class="price">€20.00</p>
+            <a href="https://tally.so/r/ODag1g" target="_blank" class="btn">JOIN WAITLIST</a>
+        </div>
+        <div class="box">
+            <img src="ocean_only.png" alt="Ocean Refill" class="product-img">
+            <h2>Ocean Refill</h2>
+            <p class="sub">Liquid Only</p>
+            <p class="price">€6.00</p>
+            <a href="https://tally.so/r/ODag1g" target="_blank" class="btn">JOIN WAITLIST</a>
+        </div>
     </div>
-</body>
-</html>
+
+    <h3>Lavender Series</h3>
+    <div class="row">
+        <div class="box">
+            <img src="lav.png" alt="Lavender Hardware" class="product-img">
+            <h2>Lavender Diffuser</h2>
+            <p class="sub">Hardware + Scent</p>
+            <p class="price">€35.00</p>
+            <a href="https://tally.so/r/ODag1g" target="_blank" class="btn">JOIN WAITLIST</a>
+        </div>
+        <div class="box">
+            <img src="lav_only.png" alt="Lavender Refill" class="product-img color-correct">
+            <h2>Lavender Refill</h2>
+            <p class="sub">Liquid Only</p>
+            <p class="price">€9.00</p>
+            <a href="https://tally.so/r/ODag1g" target="_blank" class="btn">JOIN WAITLIST</a>
+        </div>
+    </div>
+
+    <h3>Orange Series</h3>
+    <div class="row">
+        <div class="box">
+            <img src="orange.png" alt="Orange Hardware" class="product-img">
+            <h2>Orange Diffuser</h2>
+            <p class="sub">Hardware + Scent</p>
+            <p class="price">€25.00</p>
+            <a href="https://tally.so/r/ODag1g" target="_blank" class="btn">JOIN WAITLIST</a>
+        </div>
+        <div class="box">
+            <img src="orange_only.png" alt="Orange Refill" class="product-img">
+            <h2>Orange Refill</h2>
+            <p class="sub">Liquid Only</p>
+            <p class="price">€7.00</p>
+            <a href="https://tally.so/r/ODag1g" target="_blank" class="btn">JOIN WAITLIST</a>
+        </div>
+    </div>
+
+
+</body></html>
